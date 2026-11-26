@@ -12,7 +12,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                bat 'npm install'
+                bat '"C:\\Program Files\\nodejs\\npm.cmd" install'
             }
         }
 
@@ -24,7 +24,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'npm test'
+                bat '"C:\\Program Files\\nodejs\\npm.cmd" test'
             }
         }
     }
