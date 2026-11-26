@@ -11,19 +11,19 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'echo Node.js project build successful'
+                bat 'echo Node.js project build successful'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'echo Testing completed'
+                bat 'echo Testing completed'
             }
         }
     }
